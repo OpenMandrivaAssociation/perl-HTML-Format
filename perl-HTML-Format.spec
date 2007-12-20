@@ -12,6 +12,7 @@ BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl-Font-AFM >= 1.17
 BuildRequires:	perl-HTML-Tree >= 3.15
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 This is a collection of modules that formats HTML as plaintext,
