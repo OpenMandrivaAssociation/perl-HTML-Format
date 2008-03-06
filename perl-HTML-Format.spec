@@ -3,7 +3,7 @@
 Summary:	CPAN %{real_name} perl module
 Name:		perl-%{real_name}
 Version:	2.04
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	GPL or Artistic
 Group:		Development/Perl
 Source:		http://search.cpan.org/CPAN/authors/id/S/SB/SBURKE/%{real_name}-%{version}.tar.gz
