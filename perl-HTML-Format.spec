@@ -1,18 +1,20 @@
-%define	real_name HTML-Format
+%define	upstream_name    HTML-Format
+%define	upstream_version 2.04
 
-Summary:	CPAN %{real_name} perl module
-Name:		perl-%{real_name}
-Version:	2.04
-Release:	%mkrel 5
-License:	GPL or Artistic
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:	CPAN %{upstream_name} perl module
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Source:		http://search.cpan.org/CPAN/authors/id/S/SB/SBURKE/%{real_name}-%{version}.tar.gz
-URL:		http://search.cpan.org/dist/HTML-Format/
-BuildArch:	noarch
-BuildRequires:	perl-devel
+Url:		http://search.cpan.org/dist/HTML-Format/
+Source0:	http://search.cpan.org/CPAN/authors/id/S/SB/SBURKE/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl-Font-AFM >= 1.17
 BuildRequires:	perl-HTML-Tree >= 3.15
-BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This is a collection of modules that formats HTML as plaintext,
@@ -32,7 +34,7 @@ The modules present in this package are:
         of the current formatters handle tables or forms yet.
 
 %prep
-%setup -q -n %{real_name}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -51,5 +53,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{_mandir}/*/*
 %{perl_vendorlib}/HTML/*
-
-
