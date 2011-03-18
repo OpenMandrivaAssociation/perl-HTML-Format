@@ -1,5 +1,5 @@
 %define	upstream_name    HTML-Format
-%define	upstream_version 2.04
+%define	upstream_version 2.05
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,10 +9,10 @@ Summary:	CPAN %{upstream_name} perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/HTML-Format/
-Source0:	http://search.cpan.org/CPAN/authors/id/S/SB/SBURKE/%{upstream_name}-%{upstream_version}.tar.gz
-
-BuildRequires:	perl-Font-AFM >= 1.17
-BuildRequires:	perl-HTML-Tree >= 3.15
+Source:     http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.gz
+BuildRequires:	perl(Font::AFM) >= 1.17
+BuildRequires:	perl(HTML::Tree) >= 3.15
+BuildRequires:	perl(Test::More) >= 0.960.0
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
