@@ -1,10 +1,11 @@
 %define	modname	HTML-Format
-%define	modver	2.09
+%define modver 2.11
 
 Summary:	CPAN %{modname} perl module
+
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	8
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/HTML-Format/
@@ -49,4 +50,5 @@ The modules present in this package are:
 %doc Changes README
 %{perl_vendorlib}/HTML/*
 %{_mandir}/man3/*
+
 
