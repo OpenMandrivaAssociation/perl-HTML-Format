@@ -5,7 +5,7 @@ Summary:	CPAN %{modname} perl module
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	7
+Release:	8
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/HTML-Format/
@@ -15,6 +15,7 @@ BuildRequires:	perl(Font::AFM) >= 1.17
 BuildRequires:	perl(HTML::Tree) >= 3.15
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(Test::More) >= 0.960.0
+BuildRequires:  perl(File::Slurp)
 
 %description
 This is a collection of modules that formats HTML as plaintext,
