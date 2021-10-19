@@ -35,10 +35,10 @@ The modules present in this package are:
         of the current formatters handle tables or forms yet.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{modver}
 
 %build
-%__perl Build.PL installdirs=vendor
+perl Build.PL installdirs=vendor
 ./Build
 
 %check
@@ -50,6 +50,6 @@ The modules present in this package are:
 %files
 %doc Changes README
 %{perl_vendorlib}/HTML/*
-%{_mandir}/man3/*
+%doc %{_mandir}/man3/*
 
 
