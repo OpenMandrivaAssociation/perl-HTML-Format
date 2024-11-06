@@ -11,7 +11,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/HTML-Format/
 Source0:	http://www.cpan.org/modules/by-module/HTML/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
-BuildRequires:	perl(Font::AFM) >= 1.17
+BuildRequires:	perl(Font::AFM)
 BuildRequires:	perl(HTML::Tree) >= 3.15
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(Test::More) >= 0.960.0
