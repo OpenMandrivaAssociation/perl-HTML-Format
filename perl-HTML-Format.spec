@@ -12,9 +12,9 @@ Url:		https://search.cpan.org/dist/HTML-Format/
 Source0:	http://www.cpan.org/modules/by-module/HTML/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Font::AFM)
-BuildRequires:	perl(HTML::Tree) >= 3.15
+BuildRequires:	perl(HTML::Tree)
 BuildRequires:	perl(Module::Build)
-BuildRequires:	perl(Test::More) >= 0.960.0
+BuildRequires:	perl(Test::More)
 BuildRequires:  perl(File::Slurp)
 
 %description
