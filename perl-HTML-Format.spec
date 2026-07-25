@@ -4,11 +4,11 @@
 Summary:	CPAN %{modname} perl module
 
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	9
+Version:	%{modver}
+Release:	10
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/HTML-Format/
+Url:		https://metacpan.org/dist/HTML-Format
 Source0:	http://www.cpan.org/modules/by-module/HTML/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Font::AFM)
